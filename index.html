@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,36 +14,87 @@
     <link rel="manifest" href="/favicons/site.webmanifest" />
 
     <!-- Stylesheets -->
-      <!-- Normalize -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
    
-   <!-- Baseline Styling -->
-   <link rel="stylesheet" href="base.css">
-   <!-- Specific Elements -->
-   <link rel="stylesheet" href="style.css">
+    <!-- Baseline Styling -->
+    <link rel="stylesheet" href="base.css">
+    <!-- Specific Elements -->
+    <link rel="stylesheet" href="style.css">
 
-   <!-- JavaScript -->
+    <!-- JavaScript -->
     <script src="script.js" defer></script> 
+
+    <!-- Smooth Scroll CSS -->
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Basic styling for navigation */
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Optional styling for sections */
+        section {
+            padding: 100px 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
    
 </head>
 <body>
 
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
     <main>
+        <h1>Lane Keck</h1>
 
-    <h1>Lane Keck</h1>
+        <img src="thumbnail_IMG_6293.jpg" alt="Profile Picture"/>
 
-    <img src="thumbnail_IMG_6293.jpg" alt="Profile Picture"/>
+        <!-- Bio Section -->
+        <section id="bio">
+            <h2 class = "heading">Bio</h2>
+            <p>Currently a 4th year student at EWU studying computer science with plans in pursuing video game creation, aviation mechanics, and much more. I am a hard working
+                and dedicated individual who is always looking for new opportunities to learn and grow. I am always looking for new ways to challenge myself and push my limits.
+                I have made the Dean's List every quarter since I started at EWU and I cannot wait to get my career started.
+            </p>
+        </section>
 
-    <p>Currently a 4th year student at EWU studying computer science with plans in pursuing video game creation, aviation mechanics, and much more. I am a hard working
-        and dedicated individual who is always looking for new opportunities to learn and grow. I am always looking for new ways to challenge myself and push my limits.
-        I have made the Dean's List every quarter since I started at EWU and I cannot wait to get my career started.
-    </p>
-
-    <h2>My Links</h2>
-
-    <!-- dynamically generate external links from JSON file -->
-    <ul id="myLinks"></ul>
-
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class = "heading">Contact Me</h2>
+            <!-- dynamically generate external links from JSON file -->
+            <ul class ="links" id="myLinks"></ul>
+        </section>
     </main>
     
 </body>

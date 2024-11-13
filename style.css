@@ -1,19 +1,89 @@
-/* Have fun. This is your site. */
+/* Background Animation */
+@keyframes fadeBackground {
+  0% { background-color: #3498db; } /* Start color */
+  50% { background-color: #2ecc71; } /* Midpoint color */
+  100% { background-color: #3498db; } /* End color */
+}
 
 body {
-  background: lightblue;
+  animation: fadeBackground 5s infinite;
+  animation-timing-function: ease-in-out;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
-h1{
-  text-align: center;
 
-}
 /* Main Container */
 main {
   width: 100%;
-  /* centers container to page */
+  max-width: 30em; /* Adjust to your design */
   margin-inline: auto;
-  
-  /* adjust to your design */
-  max-width: 30em;
+  padding: 20px;
+}
 
+/* Heading Styles */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: darkblue;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.5em;
+  color: darkblue;
+}
+
+/* Paragraph Text */
+p {
+  font-size: 1em;
+  color: darkblue;
+  text-align: justify;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* Navigation Menu Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between items */
+}
+
+.links li a {
+  display: inline-block;
+  padding: 10px 15px; /* Adds padding inside the box */
+  font-size: 1.2em;
+  color: darkblue;
+  text-decoration: none;
+  background-color: #f0f0f0; /* Light background color for the box */
+  border: 2px solid darkblue; /* Border color to match text */
+  border-radius: 8px; /* Rounded corners for the box */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.links li a:hover {
+  color: darkred;
+  transform: scale(1.1);
+}
+
+.links li a:active {
+  color: darkgreen;
+  transform: scale(0.9);
 }
