@@ -4,7 +4,41 @@
   50% { background-color: #2ecc71; } /* Midpoint color */
   100% { background-color: #3498db; } /* End color */
 }
+       
+html {
+  scroll-behavior: smooth;
+}
 
+/* Basic styling for navigation */
+nav {
+  background-color: #3498db;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Optional styling for sections */
+section {
+  padding: 100px 20px;
+  border-top: 1px solid #ccc;
+}
 body {
   animation: fadeBackground 5s infinite;
   animation-timing-function: ease-in-out;
@@ -15,7 +49,7 @@ body {
 /* Main Container */
 main {
   width: 100%;
-  max-width: 30em; /* Adjust to your design */
+  max-width: 30em;
   margin-inline: auto;
   padding: 20px;
 }
@@ -68,13 +102,13 @@ ul {
 
 .links li a {
   display: inline-block;
-  padding: 10px 15px; /* Adds padding inside the box */
+  padding: 10px 15px; 
   font-size: 1.2em;
   color: darkblue;
   text-decoration: none;
-  background-color: #f0f0f0; /* Light background color for the box */
-  border: 2px solid darkblue; /* Border color to match text */
-  border-radius: 8px; /* Rounded corners for the box */
+  background-color: #f0f0f0; 
+  border: 2px solid darkblue; 
+  border-radius: 8px; 
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
